@@ -1,0 +1,32 @@
+{
+  "name": "phaser-react-ui",
+  "version": "1.0.0",
+  "description": "a minimal phaser-react boilerplate with monorepo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "FORCE_COLOR=1 lerna run dev --stream --parallel",
+    "build": "FORCE_COLOR=1 lerna run build --stream --parallel",
+    "start": "FORCE_COLOR=1 lerna run start --stream --parallel",
+    "build:deploy": "FORCE_COLOR=1 lerna run build --stream --parallel && mv packages/client/build ./docs",
+    "lint": "eslint --ext \".ts,.js,.tsx,.jsx\" --ignore-path .gitignore ./packages",
+    "lint:fix": "eslint --fix --ext \".ts,.js,.tsx,.jsx\" --ignore-path .gitignore ./packages"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "lerna": "^5.1.8",
+    "phaser": "^3.55.2",
+    "serve": "^14.0.1"
+  }
+}

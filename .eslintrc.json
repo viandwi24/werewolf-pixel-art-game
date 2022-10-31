@@ -1,0 +1,89 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/prettier",
+    "plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-bitwise": "off",
+    "no-continue": "off",
+    "no-empty": "off",
+    "no-use-before-define": "off",
+    "no-useless-constructor": "off",
+    "no-promise-executor-return": "off",
+    "no-await-in-loop": "off",
+    "no-underscore-dangle": "off",
+    "radix": "off",
+    "camelcase": "off",
+    "new-cap": "off",
+    "consistent-return": "off",
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "max-classes-per-file": "off",
+    "no-restricted-syntax": "off",
+    "guard-for-in": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts":"never",
+        "tsx":"never"
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/button-has-type": "off",
+    "react/no-array-index-key": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+      }
+    }
+  }
+}
